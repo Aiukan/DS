@@ -66,7 +66,7 @@ namespace kana
 	template<typename T>
 	Vector<T> Vector<T>::operator+(const Vector<T>& other) const
 	{
-		Vector new_vec(this->size(), 0);
+		Vector<T> new_vec(this->size(), 0);
 		for (size_t i = 0; i < this->size(); ++i)
 		{
 			new_vec[i] = this->m_data[i] + other.m_data[i];
@@ -87,7 +87,7 @@ namespace kana
 	template<typename T>
 	Vector<T> Vector<T>::operator-(const Vector<T>& other) const
 	{
-		Vector new_vec(this->size(), 0);
+		Vector<T> new_vec(this->size(), 0);
 		for (size_t i = 0; i < this->size(); ++i)
 		{
 			new_vec[i] = this->m_data[i] - other.m_data[i];
@@ -108,7 +108,7 @@ namespace kana
 	template<typename T>
 	Vector<T> Vector<T>::operator*(const T val) const
 	{
-		Vector new_vec(this->size(), val);
+		Vector<T> new_vec(this->size(), val);
 		for (size_t i = 0; i < this->size(); ++i)
 		{
 			new_vec[i] *= m_data[i];
@@ -129,7 +129,7 @@ namespace kana
 	template<typename T>
 	Vector<T> Vector<T>::operator/(const T val) const
 	{
-		Vector new_vec(this->size(), 0);
+		Vector<T> new_vec(this->size(), 0);
 		for (size_t i = 0; i < this->size(); ++i)
 		{
 			new_vec[i] = m_data[i] / val;

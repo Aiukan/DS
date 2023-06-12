@@ -7,6 +7,8 @@ namespace kana
 {
 	const double PI = 3.14159265359;
 
+	const double PHI = 1.61803;
+
 	const double EPSILON = 1e-9;
 
 	double differential(std::function<double(double)> f, double point);

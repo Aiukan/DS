@@ -3,6 +3,8 @@
 #include <vector>
 #include <functional>
 
+// map function?
+// pair ?
 namespace kana
 {
 	template<typename T>
